@@ -1,7 +1,7 @@
 '''
 Python script to do score normalisation
 Usage:
-    python normalisation.py kws_file normalised_kws_file
+    python normalisation.py kws_file gamma normalised_kws_file
 '''
 
 
@@ -9,8 +9,8 @@ import sys
 
 
 # handle command line excetion
-if len(sys.argv) < 3:
-    print "---\nUsage:\n    python normalisation.py kws_file normalised_kws_file\n---\n"
+if len(sys.argv) < 4:
+    print "---\nUsage:\n    python normalisation.py kws_file gamma normalised_kws_file\n---\n"
     exit(1)
 
 # read kws file into a dictionary
@@ -21,14 +21,18 @@ with open(sys.argv[1]) as fd:
 
 # score normalisation
 print "normalising scores ..."
+gamma = float(sys.argv[2])
 for detected_kwlist in decode['kwslist']['detected_kwlist']:
     sum = 0
     if 'kw' in detected_kwlist.keys():
-        if type(detected_kwlist['kw']) == type([]):     # if there are mutiple hits
+        if type(detected_kwlist['kw']) == type([]):     # if multiple hits
             for kw in detected_kwlist['kw']:
-                sum += float(kw['@score'])
+                sum += float(kw['@score']) ** gamma
             for kw in detected_kwlist['kw']:
-                kw['@score'] = float(kw['@score']) / sum
+                kw['@score'] = float(kw['@score']) ** gamma / sum
+        else:
+            kw = detected_kwlist['kw']
+            kw['@score'] = 1.
 
 
 # output
@@ -67,7 +71,7 @@ for detected_kwlist in decode['kwslist']['detected_kwlist']:
 output += "</kwslist>\n"
 
 print "output file ..."
-OUT_PATH = sys.argv[2]
+OUT_PATH = sys.argv[3]
 f = open(OUT_PATH, "w")
 f.write(output)
 f.close()
