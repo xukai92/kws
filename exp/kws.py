@@ -21,8 +21,8 @@ f = open(sys.argv[1], "r")  # ctm filename is the first argument
 lattices = {}
 for line in f:
     temp_dict = {}
-    line_list = line.replace("\n", "").split(" ")   # remove the line break symbol
-                                                    # and convert to list
+    line = " ".join(line.split())                   # remove the tabs
+    line_list = line.replace("\n", "").split(" ")   # remove the line break symbol and convert to list
     file_name = line_list[0]
     temp_dict["channel"] = line_list[1]
     start_time = float(line_list[2])
