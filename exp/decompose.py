@@ -67,7 +67,7 @@ f.close()
 
 # decompose 1-best
 print 'output decomposed ctm file ...'
-f = open('ctm/decode-morph.ctm', 'w')
+f = open('ctms/decode-morph.ctm', 'w')
 for entry in ctm:
     l = len(entry[4])                   # get the number of decomposed parts
     dur = float(entry[3]) / l           # spare duration evenly to each part
