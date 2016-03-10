@@ -1,5 +1,5 @@
 [/usr/local/teach/scoring/F4DE-3.2.4/bin/BABEL13_Scorer]
-FYI: /usr/local/teach/scoring/F4DE-3.2.4/bin/BABEL13_Scorer will run: [/usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/BABEL_Scorer.pl --Specfile /usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/../../data/KWS13-SubmissionChecker_conf.perl -sys scoring/decode-ctm+query-morph.kwslist.xml -dbDir /usr/local/teach/MLSALT5/Practical/IndusDB -comp scoring/decode-ctm+query-morph-tmp -res scoring/decode-ctm+query-morph -exp KWS13_CUED_IARPA-babel202b-v1.0d_conv-dev_BaDev_KWS_FullLP_BaseLR_NTAR_p-test_1]
+FYI: /usr/local/teach/scoring/F4DE-3.2.4/bin/BABEL13_Scorer will run: [/usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/BABEL_Scorer.pl --Specfile /usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/../../data/KWS13-SubmissionChecker_conf.perl -sys scoring//decode-ctm+query-morph.kwslist.xml -dbDir /usr/local/teach/MLSALT5/Practical/IndusDB -comp scoring//decode-ctm+query-morph-tmp -res scoring//decode-ctm+query-morph -exp KWS13_CUED_IARPA-babel202b-v1.0d_conv-dev_BaDev_KWS_FullLP_BaseLR_NTAR_p-test_1]
 
 Step 1: Parse input
 Info: EXPID = KWS13_CUED_IARPA-babel202b-v1.0d_conv-dev_BaDev_KWS_FullLP_BaseLR_NTAR_p-test_1

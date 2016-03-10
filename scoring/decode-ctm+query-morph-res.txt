@@ -11,10 +11,10 @@
 |                        Value |                                                                                1 |
 |                        Ptarg |                                                                           0.0001 |
 |                         Cost |                                                                           0.1000 |
-|            Combined DET Plot |                                                        /tmp/sUTkY9F1NT/merge.png |
+|            Combined DET Plot |                                                        /tmp/D2qujf2Yaq/merge.png |
 
 
 |              |                  Inputs                  |                               Actual Decision TWV Analysis                                |              Maximum TWV Analysis               |                                              DET Curve Graphs                                              |
 |    Title     |  #Keyword  |  #Targ  |  #NTarg  |  #Sys  |  #CorDet  |  #Cor!Det  |  #FA  |  #Miss  |    PFA    |  PMiss   |   TWV    |  Dec. Tresh  |    PFA    |  PMiss   |   TWV    |  Dec. Thresh  |                    DET Curve                     |                     Threshold Curve                     |
 |--------------+------------+---------+----------+--------+-----------+------------+-------+---------+-----------+----------+----------+--------------+-----------+----------+----------+---------------+--------------------------------------------------+---------------------------------------------------------+
-|   Occurrence |        488 |     963 |      532 |    814 |       282 |          0 |   532 |     681 |   0.00003 |    0.770 |   0.1993 |       1.0000 |   0.00003 |    0.770 |   0.1993 |         1.000 |   /tmp/sUTkY9F1NT/merge.Occurrencescoring_de.png |   /tmp/sUTkY9F1NT/merge.Occurrencescoring_de.thresh.png |
+|   Occurrence |        488 |     963 |      602 |   1019 |       417 |          0 |   602 |     546 |   0.00003 |    0.652 |   0.3141 |       1.0000 |   0.00003 |    0.652 |   0.3141 |         1.000 |   /tmp/D2qujf2Yaq/merge.Occurrencescoring__d.png |   /tmp/D2qujf2Yaq/merge.Occurrencescoring__d.thresh.png |

@@ -73,7 +73,7 @@ for entry in ctm:
     dur = float(entry[3]) / l           # spare duration evenly to each part
     post = float(entry[5]) ** (1.0 / l) # the posterior of all should stay same
     for i in range(l):                  # output each decomposed part
-        start = float(entry[2]) + dur * (i - 1)
+        start = float(entry[2]) + dur * i
         out = '{f} 1 {start} {dur} {token} {post}\n' \
               .format(f=entry[0],
                       start=start,
