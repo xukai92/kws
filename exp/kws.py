@@ -10,7 +10,7 @@ import sys
 
 # handle command line exception
 if len(sys.argv) < 4:
-    print "python kws.py ctm_file query_file output_decode_file"
+    print "---\nUsage:\n    python kws.py ctm_file query_file output_decode_file\n---\n"
     exit(1)
 
 # read ctm file into a dictionary

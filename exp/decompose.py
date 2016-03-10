@@ -1,14 +1,16 @@
 '''
+Python script to do decomposition on "lib/kws/queries.xml" and "lib/ctm/decode.ctm"
 Usage:
     python decompose.py
 '''
+
 
 # read query morph dict
 print 'reading query morph dict ...'
 f = open('lib/dicts/morph.kwslist.dct', 'r')
 query_dict = {}
 for line in f:
-    d = line.strip().split("\t")
+    d = line.strip().split("\t")    # split by tab
     query_dict[d[0]] = d[1]
 f.close()
 
@@ -18,16 +20,19 @@ import xmltodict as xtd
 with open('lib/kws/queries.xml') as f:
     queries = xtd.parse(f.read())
 queries_morph = {}
-for query in queries['kwlist']['kw']:
-    words = query['kwtext'].split(" ")
-    for i in range(len(words)):
-        if words[i] in query_dict.keys():
-            words[i] = query_dict[words[i]]
-    queries_morph[query['@kwid']] = ' '.join(words)
 
 # decompose queries
-print 'decomposing queries'
-f = open('exp/queries-morph.xml', 'w')
+print 'decomposing queries ...'
+for query in queries['kwlist']['kw']:
+    words = query['kwtext'].split(" ")
+    for i in range(len(words)):                     # for each word in query phrase
+        if words[i] in query_dict.keys():           # if the word have a decomposition
+            words[i] = query_dict[words[i]]         # map it by dictionary
+    queries_morph[query['@kwid']] = ' '.join(words) # put decomposed words together
+
+# output
+print 'output decomposed queires ...'
+f = open('kws/queries-morph.xml', 'w')
 f.write('<kwlist ecf_filename="IARPA-babel202b-v1.0d_conv-dev.ecf.xml" language="swahili" encoding="UTF-8" compareNormalize="lowercase" version="202 IBM and BBN keywords">\n')
 for kwid in queries_morph:
     out = '  <kw kwid="{kwid}">\n'.format(kwid=kwid)
@@ -42,32 +47,32 @@ print 'reading ctm morph dict ...'
 f = open('lib/dicts/morph.dct', 'r')
 onebest_dict= {}
 for line in f:
-    d = line.strip().split('\t')
+    d = line.strip().split('\t')    # split by tab
     onebest_dict[d[0]] = d[1]
 f.close()
 
-# read 1-best
-print 'reading ctm file ...'
+# read 1-best lattice and decompose
+print 'reading and decomposing ctm file ...'
 ctm = []
 f = open('lib/ctms/decode.ctm', 'r')
 for line in f:
     entry = line.split()
     token = entry[4]
     if token in onebest_dict.keys():
-        token = onebest_dict[token]
+        token = onebest_dict[token]     # map by dictionary
     token = token.split()
     entry[4] = token
     ctm.append(entry)
 f.close()
 
 # decompose 1-best
-print 'decomposing ctm file ...'
-f = open('exp/decode-morph.ctm', 'w')
+print 'output decomposed ctm file ...'
+f = open('ctm/decode-morph.ctm', 'w')
 for entry in ctm:
-    l = len(entry[4])
-    dur = float(entry[3]) / l
-    post = float(entry[5]) ** (1.0 / l)
-    for i in range(l):
+    l = len(entry[4])                   # get the number of decomposed parts
+    dur = float(entry[3]) / l           # spare duration evenly to each part
+    post = float(entry[5]) ** (1.0 / l) # the posterior of all should stay same
+    for i in range(l):                  # output each decomposed part
         start = float(entry[2]) + dur * (i - 1)
         out = '{f} 1 {start} {dur} {token} {post}\n' \
               .format(f=entry[0],
