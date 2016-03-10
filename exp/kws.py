@@ -18,7 +18,7 @@ if len(sys.argv) < 4:
 # and the second level key is the start time
 print "reading ctm file ..."
 f = open(sys.argv[1], "r")  # ctm filename is the first argument
-reference = {}
+lattices = {}
 for line in f:
     temp_dict = {}
     line_list = line.replace("\n", "").split(" ")   # remove the line break symbol
@@ -29,9 +29,9 @@ for line in f:
     temp_dict["duration"] = float(line_list[3])
     temp_dict["token"] = line_list[4].lower()       # always input as lowercase
     temp_dict["word-posterior"] = float(line_list[5])
-    if file_name not in reference.keys():
-        reference[file_name] = {}
-    reference[file_name][start_time] = temp_dict
+    if file_name not in lattices.keys():
+        lattices[file_name] = {}
+    lattices[file_name][start_time] = temp_dict
 f.close()
 
 # read the query file into a dictionary
@@ -45,10 +45,10 @@ print "keyword spotting ..."
 detected_kwlist = {}                            # to store detected kw
 for query in queries["kwlist"]["kw"]:           # iterate over each query
     word_list = (query['kwtext']).split(" ")    # get the word(s) in each query
-    for file_name in reference.keys():          # iterate over each file
+    for file_name in lattices.keys():          # iterate over each file
         p_i = 0         # previous i
         # get the start time list in ascending order
-        start_time_list = reference[file_name].keys()
+        start_time_list = lattices[file_name].keys()
         start_time_list = sorted(start_time_list)
         while (p_i < len(start_time_list)):
             i = p_i + 1 # pointer for the file word list
@@ -57,7 +57,7 @@ for query in queries["kwlist"]["kw"]:           # iterate over each query
             # find the first word
             found_start = False
             while (i < len(start_time_list)):
-                entry = reference[file_name][start_time_list[i]]
+                entry = lattices[file_name][start_time_list[i]]
                 if entry["token"] == word_list[j]:
                     found_start = True
                     break
@@ -69,7 +69,7 @@ for query in queries["kwlist"]["kw"]:           # iterate over each query
             if found_start:
                 # compare the remaining part word-by-word
                 while (j < len(word_list) and i < len(start_time_list)):
-                    entry = reference[file_name][start_time_list[i]]
+                    entry = lattices[file_name][start_time_list[i]]
                     if entry["token"] != word_list[j]:  # if not same
                         break                           # break
                     i += 1
@@ -83,7 +83,7 @@ for query in queries["kwlist"]["kw"]:           # iterate over each query
                 # check 0.5s gap requirement
                 if j > 1:   # only check when the query has multiple words
                     for k in range(j - 1):
-                        if reference[file_name][start_time_list[i - j + k]]["duration"] + \
+                        if lattices[file_name][start_time_list[i - j + k]]["duration"] + \
                            start_time_list[i - j + k] < start_time_list[i - j + k + 1] - 0.5:
                             found_query = False
                             break
@@ -92,15 +92,15 @@ for query in queries["kwlist"]["kw"]:           # iterate over each query
                     # fetch record values
                     kwid = query["@kwid"]
                     start_time = start_time_list[i - j]
-                    duration = reference[file_name][start_time_list[i - 1]]["duration"] + \
+                    duration = lattices[file_name][start_time_list[i - 1]]["duration"] + \
                                start_time_list[i - 1] - start_time_list[i - j]
                     # compute score
                     nu = 0
                     for k in range(len(start_time_list)):
-                        nu += reference[file_name][start_time_list[k]]["word-posterior"]
+                        nu += lattices[file_name][start_time_list[k]]["word-posterior"]
                     denu = 0
                     for k in range(len(start_time_list)):
-                        denu += reference[file_name][start_time_list[k]]["word-posterior"]
+                        denu += lattices[file_name][start_time_list[k]]["word-posterior"]
                     posterior = nu / denu
                     score = posterior  # actually, for 1-best list, the score is always 1
                     # store it in a dictionary
