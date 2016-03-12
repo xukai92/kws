@@ -1,23 +1,29 @@
 '''
+Python script to do system combination
 Usage:
-    python combine.py decode_file_1 decode_file_2 output_combined_decode_file
+    python combine.py kws_file_1 kws_file_2 combined_kws_file
 '''
 
+
 import sys
+
+
+# handle command line exception
 if len(sys.argv) < 4:
-    print "python combine.py decode_file_1 decode_file_2 output_combined_decode_file"
+    print "---\nUsage:\n    python combine.py kws_file_1 kws_file_2 combined_kws_file\n---\n"
     exit(1)
 
+# read kws files
 import xmltodict as xtd
-with open(sys.argv[1]) as fd:
+print 'reading kws files ...'
+with open(sys.argv[1]) as fd:   # kws file 1 is the first argument
     decode_1 = xtd.parse(fd.read())
-
-with open(sys.argv[2]) as fd:
+with open(sys.argv[2]) as fd:   # kws file 2 is the second argument
     decode_2 = xtd.parse(fd.read())
 
-decode = {}
-
-print 'reading file 1 ...'
+# analysing
+decode = {}     # dictionary to store the combined system
+print 'analysing kws file 1 ...'
 for detected_kwlist in decode_1['kwslist']['detected_kwlist']:
     kwid = detected_kwlist['@kwid']
     decode[kwid] = []
@@ -29,7 +35,7 @@ for detected_kwlist in decode_1['kwslist']['detected_kwlist']:
             kw = detected_kwlist['kw']
             decode[kwid].append(kw)
 
-print 'reading file 2 ...'
+print 'analysing kws file 2 ...'
 for detected_kwlist in decode_2['kwslist']['detected_kwlist']:
     kwid = detected_kwlist['@kwid']
     if kwid not in decode.keys():
@@ -60,7 +66,6 @@ for kwid in decode.keys():
                                               dur=kw["@dur"],
                                               score=kw["@score"])
     output += '</detected_kwlist>\n'
-
 output += "</kwslist>\n"
 
 print "output file ..."

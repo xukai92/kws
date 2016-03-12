@@ -13,7 +13,7 @@ if len(sys.argv) < 4:
     print "---\nUsage:\n    python kws.py ctm_file query_file output_decode_file\n---\n"
     exit(1)
 
-# read ctm file into a dictionary
+# read ctm file into an index dictionary
 # where the first level key is the filename
 # and the second level key is the start time
 print "reading ctm file ..."
@@ -95,14 +95,14 @@ for query in queries["kwlist"]["kw"]:           # iterate over each query
                     duration = lattices[file_name][start_time_list[i - 1]]["duration"] + \
                                start_time_list[i - 1] - start_time_list[i - j]
                     # compute score
-                    nu = 0
-                    for k in range(len(start_time_list)):
-                        nu += lattices[file_name][start_time_list[k]]["word-posterior"]
-                    denu = 0
-                    for k in range(len(start_time_list)):
-                        denu += lattices[file_name][start_time_list[k]]["word-posterior"]
-                    posterior = nu / denu
-                    score = posterior  # actually, for 1-best list, the score is always 1
+
+                    posterior = 1
+                    for k in range(j):
+                        posterior *= lattices[file_name] \
+                                             [start_time_list[i - j + k] \
+                                             ["word-posterior"]]
+                    score = posterior
+
                     # store it in a dictionary
                     detected = {"kwfile": file_name,
                                 "channel": "1",
