@@ -39,9 +39,9 @@ f.close()
 
 # write the index dictionary to an index file
 output = ''
-for token in indices.keys():
-    output += 'LABEL {token}\n'.format(token=token)
-    for info in indices[token]:
+for label in indices.keys():
+    output += 'LABEL {label}\n'.format(label=label)
+    for info in indices[label]:
         output += 'INFO {filen} {ch} {start} {dur} {pos} {forw} {backw}\n' \
                   .format(filen=info['filen'],
                           ch=info['ch'],
