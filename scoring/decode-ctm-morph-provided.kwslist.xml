@@ -1,0 +1,360 @@
+<kwslist kwlist_filename="IARPA-babel202b-v1.0d_conv-dev.kwlist.xml" language="swahili" system_id="">
+<detected_kwlist kwid="KW202-00470" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_55042_20131217_033729_inLine" channel="1" tbeg="53.2" dur="0.54" score="0.869343" decision="YES"/>
+<kw file="BABEL_OP2_202_73819_20130911_163458_outLine" channel="1" tbeg="417.35" dur="0.37" score="0.582164" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00317" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_15420_20140210_010333_inLine" channel="1" tbeg="406.06" dur="0.51" score="0.654263" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="168.64" dur="0.61" score="0.797888" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="173.25" dur="0.39" score="0.879964" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="180.53" dur="0.27" score="0.969282" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="568.25" dur="0.33" score="0.939148" decision="YES"/>
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="301.63" dur="0.32" score="0.998242" decision="YES"/>
+<kw file="BABEL_OP2_202_24239_20140206_191516_inLine" channel="1" tbeg="446.27" dur="0.35" score="0.716421" decision="YES"/>
+<kw file="BABEL_OP2_202_24239_20140206_191516_outLine" channel="1" tbeg="81.75" dur="0.37" score="0.542436" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_inLine" channel="1" tbeg="442.0" dur="0.45" score="0.944691" decision="YES"/>
+<kw file="BABEL_OP2_202_25242_20131203_015232_inLine" channel="1" tbeg="475.65" dur="0.36" score="0.917139" decision="YES"/>
+<kw file="BABEL_OP2_202_29663_20131208_035816_inLine" channel="1" tbeg="548.81" dur="0.34" score="0.511537" decision="YES"/>
+<kw file="BABEL_OP2_202_34197_20121228_201800_inLine" channel="1" tbeg="375.79" dur="0.26" score="0.465726" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="486.76" dur="0.27" score="0.86563" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="491.08" dur="0.27" score="0.506955" decision="YES"/>
+<kw file="BABEL_OP2_202_46169_20131128_183232_inLine" channel="1" tbeg="318.33" dur="0.33" score="0.379898" decision="YES"/>
+<kw file="BABEL_OP2_202_46169_20131128_183232_inLine" channel="1" tbeg="378.17" dur="0.24" score="0.342048" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_outLine" channel="1" tbeg="93.42" dur="0.38" score="0.51818" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_outLine" channel="1" tbeg="249.37" dur="0.39" score="0.807119" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_outLine" channel="1" tbeg="476.76" dur="0.42" score="0.67256" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="428.34" dur="0.38" score="0.751259" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="510.1" dur="0.21" score="0.414604" decision="YES"/>
+<kw file="BABEL_OP2_202_59091_20140130_225624_outLine" channel="1" tbeg="340.02" dur="0.22" score="0.460031" decision="YES"/>
+<kw file="BABEL_OP2_202_63484_20140128_234153_outLine" channel="1" tbeg="221.94" dur="0.27" score="0.471609" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="129.12" dur="0.33" score="0.924711" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_outLine" channel="1" tbeg="128.06" dur="0.64" score="0.615493" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_outLine" channel="1" tbeg="100.74" dur="0.29" score="0.999724" decision="YES"/>
+<kw file="BABEL_OP2_202_69964_20131012_170534_inLine" channel="1" tbeg="579.66" dur="0.37" score="0.998651" decision="YES"/>
+<kw file="BABEL_OP2_202_75993_20140115_210258_inLine" channel="1" tbeg="319.59" dur="0.35" score="0.931038" decision="YES"/>
+<kw file="BABEL_OP2_202_75993_20140115_210258_inLine" channel="1" tbeg="325.93" dur="0.47" score="0.897606" decision="YES"/>
+<kw file="BABEL_OP2_202_77990_20131007_063102_outLine" channel="1" tbeg="25.82" dur="0.34" score="0.897782" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_inLine" channel="1" tbeg="415.47" dur="0.29" score="0.983546" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="397.71" dur="0.32" score="0.998056" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="417.64" dur="0.47" score="0.794663" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="521.05" dur="0.25" score="0.561057" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00056" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="184.69" dur="0.47" score="0.985666523664" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="360.36" dur="0.37" score="0.415175286537" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00353" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_75993_20140115_210258_inLine" channel="1" tbeg="595.54" dur="0.62" score="0.999825007636" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00075" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_46681_20130109_191412_inLine" channel="1" tbeg="206.81" dur="0.43" score="0.14774909814" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="109.52" dur="0.58" score="0.64598626965" decision="YES"/>
+<kw file="BABEL_OP2_202_72040_20131002_213605_inLine" channel="1" tbeg="286.74" dur="0.49" score="0.39690679544" decision="YES"/>
+<kw file="BABEL_OP2_202_72040_20131002_213605_outLine" channel="1" tbeg="193.35" dur="0.6" score="0.83212917819" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00405" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="116.84" dur="0.93" score="0.84850468005" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00261" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="279.19" dur="0.6" score="0.452897" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="572.05" dur="0.63" score="0.94388" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00244" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_72040_20131002_213605_inLine" channel="1" tbeg="297.57" dur="0.51" score="0.508806" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_193227_inLine" channel="1" tbeg="218.06" dur="1.08" score="0.682071" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00441" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_15420_20140210_010333_inLine" channel="1" tbeg="317.34" dur="0.94" score="0.935185" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="153.32" dur="0.36" score="0.976506" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_outLine" channel="1" tbeg="512.99" dur="0.47" score="0.391161" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_outLine" channel="1" tbeg="149.99" dur="0.47" score="0.832141" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_outLine" channel="1" tbeg="249.41" dur="0.35" score="0.60412" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_inLine" channel="1" tbeg="482.8" dur="0.38" score="0.698325" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_outLine" channel="1" tbeg="479.03" dur="0.36" score="0.611521" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_outLine" channel="1" tbeg="493.74" dur="0.32" score="0.945596" decision="YES"/>
+<kw file="BABEL_OP2_202_77990_20131007_063102_outLine" channel="1" tbeg="387.75" dur="0.5" score="0.705738" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="255.67" dur="0.52" score="0.662782" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="298.46" dur="0.44" score="0.746143" decision="YES"/>
+<kw file="BABEL_OP2_202_92740_20130923_235638_outLine" channel="1" tbeg="265.28" dur="0.33" score="0.904884" decision="YES"/>
+<kw file="BABEL_OP2_202_92740_20130923_235638_outLine" channel="1" tbeg="268.92" dur="0.33" score="0.752057" decision="YES"/>
+<kw file="BABEL_OP2_202_92740_20130923_235638_outLine" channel="1" tbeg="274.29" dur="0.86" score="0.750878" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00241" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="29.01" dur="0.35" score="0.427676" decision="YES"/>
+<kw file="BABEL_OP2_202_29663_20131208_035816_outLine" channel="1" tbeg="323.98" dur="0.37" score="0.994857" decision="YES"/>
+<kw file="BABEL_OP2_202_29663_20131208_035816_outLine" channel="1" tbeg="501.12" dur="0.44" score="0.999279" decision="YES"/>
+<kw file="BABEL_OP2_202_45459_20131012_022245_outLine" channel="1" tbeg="234.87" dur="0.34" score="0.409308" decision="YES"/>
+<kw file="BABEL_OP2_202_46681_20130109_191412_inLine" channel="1" tbeg="398.75" dur="0.9" score="0.944541" decision="YES"/>
+<kw file="BABEL_OP2_202_46681_20130109_191412_inLine" channel="1" tbeg="590.77" dur="0.41" score="0.560285" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="396.05" dur="0.71" score="0.335615" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00201" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_33273_20130219_224915_outLine" channel="1" tbeg="42.42" dur="0.7" score="0.950952" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_inLine" channel="1" tbeg="197.12" dur="0.49" score="0.999959" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_inLine" channel="1" tbeg="317.04" dur="0.55" score="0.909413" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="199.71" dur="0.5" score="0.822569" decision="YES"/>
+<kw file="BABEL_OP2_202_44478_20131011_041636_outLine" channel="1" tbeg="589.85" dur="0.35" score="0.696161" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_inLine" channel="1" tbeg="60.11" dur="0.7" score="0.644576" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_outLine" channel="1" tbeg="400.4" dur="0.42" score="0.397513" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_outLine" channel="1" tbeg="564.65" dur="0.74" score="0.35939" decision="YES"/>
+<kw file="BABEL_OP2_202_55106_20131215_030617_outLine" channel="1" tbeg="560.66" dur="0.54" score="0.33604" decision="YES"/>
+<kw file="BABEL_OP2_202_88661_20130801_192922_inLine" channel="1" tbeg="181.51" dur="0.45" score="0.995789" decision="YES"/>
+<kw file="BABEL_OP2_202_88661_20130801_192922_inLine" channel="1" tbeg="188.05" dur="0.46" score="0.997067" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00204" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_10524_20131009_200043_outLine" channel="1" tbeg="591.96" dur="1.19" score="0.324642" decision="YES"/>
+<kw file="BABEL_OP2_202_12635_20131101_212012_outLine" channel="1" tbeg="247.14" dur="0.42" score="0.987547" decision="YES"/>
+<kw file="BABEL_OP2_202_12635_20131101_212012_outLine" channel="1" tbeg="386.39" dur="0.64" score="0.945314" decision="YES"/>
+<kw file="BABEL_OP2_202_12635_20131101_212012_outLine" channel="1" tbeg="392.11" dur="0.31" score="0.996643" decision="YES"/>
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="378.1" dur="0.44" score="0.660512" decision="YES"/>
+<kw file="BABEL_OP2_202_18766_20140218_222017_outLine" channel="1" tbeg="570.62" dur="0.54" score="0.424645" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_inLine" channel="1" tbeg="194.83" dur="0.45" score="0.689007" decision="YES"/>
+<kw file="BABEL_OP2_202_25242_20131203_015232_inLine" channel="1" tbeg="287.15" dur="0.46" score="0.587409" decision="YES"/>
+<kw file="BABEL_OP2_202_25242_20131203_015232_inLine" channel="1" tbeg="511.95" dur="0.43" score="0.504833" decision="YES"/>
+<kw file="BABEL_OP2_202_29663_20131208_035816_outLine" channel="1" tbeg="237.96" dur="0.49" score="0.787426" decision="YES"/>
+<kw file="BABEL_OP2_202_32287_20131207_203757_outLine" channel="1" tbeg="239.14" dur="0.3" score="0.937821" decision="YES"/>
+<kw file="BABEL_OP2_202_33273_20130219_205419_inLine" channel="1" tbeg="53.74" dur="1.06" score="0.987722" decision="YES"/>
+<kw file="BABEL_OP2_202_33273_20130219_205419_inLine" channel="1" tbeg="69.06" dur="0.8" score="0.990929" decision="YES"/>
+<kw file="BABEL_OP2_202_33273_20130219_224915_outLine" channel="1" tbeg="101.11" dur="0.51" score="0.228439" decision="YES"/>
+<kw file="BABEL_OP2_202_33273_20130219_224915_outLine" channel="1" tbeg="388.8" dur="0.66" score="0.739971" decision="YES"/>
+<kw file="BABEL_OP2_202_34197_20121228_201800_inLine" channel="1" tbeg="15.24" dur="0.68" score="0.98967" decision="YES"/>
+<kw file="BABEL_OP2_202_34197_20121228_201800_inLine" channel="1" tbeg="281.39" dur="0.64" score="0.998836" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="73.33" dur="0.39" score="0.436833" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="336.85" dur="0.39" score="0.957334" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="598.38" dur="0.92" score="0.914958" decision="YES"/>
+<kw file="BABEL_OP2_202_44478_20131011_041636_outLine" channel="1" tbeg="318.21" dur="0.45" score="0.990284" decision="YES"/>
+<kw file="BABEL_OP2_202_45459_20131012_022245_inLine" channel="1" tbeg="24.15" dur="0.27" score="0.600218" decision="YES"/>
+<kw file="BABEL_OP2_202_45459_20131012_022245_outLine" channel="1" tbeg="164.71" dur="0.68" score="0.478276" decision="YES"/>
+<kw file="BABEL_OP2_202_45459_20131012_022245_outLine" channel="1" tbeg="168.12" dur="0.65" score="0.789284" decision="YES"/>
+<kw file="BABEL_OP2_202_46169_20131128_183232_outLine" channel="1" tbeg="197.06" dur="1.08" score="0.478258" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_inLine" channel="1" tbeg="319.42" dur="0.68" score="0.412618" decision="YES"/>
+<kw file="BABEL_OP2_202_48844_20130108_190416_inLine" channel="1" tbeg="64.31" dur="0.5" score="0.999041" decision="YES"/>
+<kw file="BABEL_OP2_202_48844_20130108_190416_inLine" channel="1" tbeg="210.1" dur="0.76" score="0.999458" decision="YES"/>
+<kw file="BABEL_OP2_202_48844_20130108_190416_outLine" channel="1" tbeg="82.88" dur="0.78" score="0.991302" decision="YES"/>
+<kw file="BABEL_OP2_202_48844_20130108_190416_outLine" channel="1" tbeg="84.43" dur="0.58" score="0.94014" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_inLine" channel="1" tbeg="182.8" dur="0.74" score="0.501364" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="21.28" dur="0.32" score="0.828259" decision="YES"/>
+<kw file="BABEL_OP2_202_55042_20131217_033729_inLine" channel="1" tbeg="365.78" dur="0.63" score="0.458626" decision="YES"/>
+<kw file="BABEL_OP2_202_59549_20131003_204655_outLine" channel="1" tbeg="158.28" dur="0.72" score="0.332169" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="179.29" dur="0.64" score="0.689947" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="282.77" dur="0.49" score="0.785675" decision="YES"/>
+<kw file="BABEL_OP2_202_66822_20130219_225918_inLine" channel="1" tbeg="47.95" dur="0.61" score="0.99834" decision="YES"/>
+<kw file="BABEL_OP2_202_66822_20130219_225918_inLine" channel="1" tbeg="391.12" dur="0.37" score="0.733083" decision="YES"/>
+<kw file="BABEL_OP2_202_73258_20130215_190454_inLine" channel="1" tbeg="585.88" dur="0.37" score="0.532067" decision="YES"/>
+<kw file="BABEL_OP2_202_73258_20130215_190454_outLine" channel="1" tbeg="353.29" dur="0.4" score="0.328572" decision="YES"/>
+<kw file="BABEL_OP2_202_73301_20140226_185528_inLine" channel="1" tbeg="257.91" dur="0.66" score="0.263553" decision="YES"/>
+<kw file="BABEL_OP2_202_73301_20140226_185528_inLine" channel="1" tbeg="368.88" dur="0.58" score="0.490108" decision="YES"/>
+<kw file="BABEL_OP2_202_73301_20140226_185528_inLine" channel="1" tbeg="375.21" dur="0.74" score="0.931347" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_inLine" channel="1" tbeg="20.88" dur="0.69" score="0.96553" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="69.41" dur="0.96" score="0.969262" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="105.03" dur="0.63" score="0.626629" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="111.31" dur="0.67" score="0.989733" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="509.17" dur="0.53" score="0.80417" decision="YES"/>
+<kw file="BABEL_OP2_202_88661_20130801_192922_inLine" channel="1" tbeg="375.65" dur="0.4" score="0.859049" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00097" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_29633_20131009_175514_inLine" channel="1" tbeg="287.0" dur="0.56" score="0.730468382554" decision="YES"/>
+<kw file="BABEL_OP2_202_46681_20130109_191412_inLine" channel="1" tbeg="486.1" dur="0.51" score="0.91517373558" decision="YES"/>
+<kw file="BABEL_OP2_202_46681_20130109_191412_inLine" channel="1" tbeg="497.92" dur="0.53" score="0.993375381547" decision="YES"/>
+<kw file="BABEL_OP2_202_55902_20140121_230205_inLine" channel="1" tbeg="205.19" dur="0.56" score="0.996439018708" decision="YES"/>
+<kw file="BABEL_OP2_202_55902_20140121_230205_inLine" channel="1" tbeg="210.17" dur="0.51" score="0.9617691816" decision="YES"/>
+<kw file="BABEL_OP2_202_55902_20140121_230205_inLine" channel="1" tbeg="289.16" dur="0.41" score="0.691989586194" decision="YES"/>
+<kw file="BABEL_OP2_202_55902_20140121_230205_inLine" channel="1" tbeg="297.87" dur="0.54" score="0.417706136072" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="66.62" dur="0.7" score="0.674425861265" decision="YES"/>
+<kw file="BABEL_OP2_202_63484_20140128_234153_outLine" channel="1" tbeg="68.7" dur="0.72" score="0.17110840029" decision="YES"/>
+<kw file="BABEL_OP2_202_75993_20140115_210258_inLine" channel="1" tbeg="116.61" dur="0.51" score="0.639141408633" decision="YES"/>
+<kw file="BABEL_OP2_202_75993_20140115_210258_inLine" channel="1" tbeg="237.13" dur="0.63" score="0.989254854189" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="145.18" dur="0.45" score="0.865945416555" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00424" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_60650_20131126_234235_outLine" channel="1" tbeg="539.42" dur="1.62" score="0.99886226176" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00494" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_18766_20140218_222017_outLine" channel="1" tbeg="322.64" dur="0.82" score="0.554716" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00388" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_59549_20131003_204655_inLine" channel="1" tbeg="119.52" dur="0.31" score="0.314585" decision="YES"/>
+<kw file="BABEL_OP2_202_77990_20131007_063102_inLine" channel="1" tbeg="139.17" dur="0.65" score="0.331637" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00435" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_10524_20131009_200043_inLine" channel="1" tbeg="178.44" dur="0.31" score="0.97369" decision="YES"/>
+<kw file="BABEL_OP2_202_10524_20131009_200043_outLine" channel="1" tbeg="468.35" dur="0.29" score="0.922845" decision="YES"/>
+<kw file="BABEL_OP2_202_16249_20131202_232723_outLine" channel="1" tbeg="556.13" dur="0.2" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_16249_20131202_232723_outLine" channel="1" tbeg="556.33" dur="0.45" score="0.993884" decision="YES"/>
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="91.19" dur="0.23" score="0.984906" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_inLine" channel="1" tbeg="118.0" dur="0.27" score="0.994677" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_inLine" channel="1" tbeg="118.27" dur="0.7" score="0.969789" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_outLine" channel="1" tbeg="111.13" dur="0.23" score="0.992861" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_outLine" channel="1" tbeg="111.36" dur="0.28" score="0.963572" decision="YES"/>
+<kw file="BABEL_OP2_202_24290_20140219_000423_outLine" channel="1" tbeg="115.63" dur="0.25" score="0.579697" decision="YES"/>
+<kw file="BABEL_OP2_202_27478_20140209_224101_outLine" channel="1" tbeg="515.05" dur="0.25" score="0.999317" decision="YES"/>
+<kw file="BABEL_OP2_202_29633_20131009_175514_outLine" channel="1" tbeg="495.15" dur="0.26" score="0.414898" decision="YES"/>
+<kw file="BABEL_OP2_202_32287_20131207_203757_inLine" channel="1" tbeg="287.22" dur="0.18" score="0.349338" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_inLine" channel="1" tbeg="381.3" dur="0.24" score="0.481678" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="474.44" dur="0.2" score="0.889969" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="474.64" dur="0.6" score="0.886342" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_inLine" channel="1" tbeg="66.6" dur="0.2" score="0.894194" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_inLine" channel="1" tbeg="66.8" dur="0.36" score="0.868094" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="82.3" dur="0.22" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="82.52" dur="0.34" score="0.999832" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="200.04" dur="0.21" score="0.999956" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="200.25" dur="0.29" score="0.999964" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="318.71" dur="0.19" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="318.9" dur="0.23" score="0.999737" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="330.63" dur="0.2" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="330.83" dur="0.29" score="0.999958" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="469.17" dur="0.2" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="469.37" dur="0.28" score="0.99994" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="578.88" dur="0.2" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="579.08" dur="0.2" score="0.99745" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="329.58" dur="0.24" score="0.982511" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="329.82" dur="0.36" score="0.995691" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="330.18" dur="0.24" score="0.991553" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="330.42" dur="0.25" score="0.973382" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="334.22" dur="0.18" score="0.81898" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="334.4" dur="0.26" score="0.896267" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="368.72" dur="0.25" score="0.670199" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="368.97" dur="0.43" score="0.684114" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_outLine" channel="1" tbeg="338.04" dur="0.22" score="0.99901" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_outLine" channel="1" tbeg="338.26" dur="0.25" score="0.99874" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_outLine" channel="1" tbeg="396.59" dur="0.24" score="0.99987" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_outLine" channel="1" tbeg="396.83" dur="0.36" score="0.993232" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_inLine" channel="1" tbeg="425.68" dur="0.35" score="0.781868" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="310.18" dur="0.23" score="0.999915" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="310.41" dur="0.24" score="0.983606" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_outLine" channel="1" tbeg="451.66" dur="0.41" score="0.980599" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_outLine" channel="1" tbeg="112.53" dur="0.26" score="0.721055" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_outLine" channel="1" tbeg="112.79" dur="0.43" score="0.654284" decision="YES"/>
+<kw file="BABEL_OP2_202_66822_20130219_222318_outLine" channel="1" tbeg="96.94" dur="0.4" score="0.363414" decision="YES"/>
+<kw file="BABEL_OP2_202_66822_20130219_225918_outLine" channel="1" tbeg="458.36" dur="0.28" score="0.477944" decision="YES"/>
+<kw file="BABEL_OP2_202_72040_20131002_213605_inLine" channel="1" tbeg="351.18" dur="0.27" score="0.99998" decision="YES"/>
+<kw file="BABEL_OP2_202_72040_20131002_213605_inLine" channel="1" tbeg="351.45" dur="0.22" score="0.993761" decision="YES"/>
+<kw file="BABEL_OP2_202_73258_20130215_190454_inLine" channel="1" tbeg="15.56" dur="0.28" score="0.601907" decision="YES"/>
+<kw file="BABEL_OP2_202_73301_20140226_185528_inLine" channel="1" tbeg="261.14" dur="0.38" score="0.613414" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_inLine" channel="1" tbeg="154.6" dur="0.39" score="0.997206" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_inLine" channel="1" tbeg="172.1" dur="0.36" score="0.968052" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_outLine" channel="1" tbeg="146.92" dur="0.33" score="0.994997" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_outLine" channel="1" tbeg="173.5" dur="0.33" score="0.988196" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_205425_outLine" channel="1" tbeg="180.89" dur="0.33" score="0.998461" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="559.06" dur="0.22" score="0.501488" decision="YES"/>
+<kw file="BABEL_OP2_202_98311_20130109_195922_outLine" channel="1" tbeg="236.78" dur="0.23" score="1.0" decision="YES"/>
+<kw file="BABEL_OP2_202_98311_20130109_195922_outLine" channel="1" tbeg="237.01" dur="0.18" score="0.954991" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00066" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_15420_20140210_010333_inLine" channel="1" tbeg="554.91" dur="0.41" score="0.941819" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="569.46" dur="0.34" score="0.510478" decision="YES"/>
+<kw file="BABEL_OP2_202_59091_20140130_225624_outLine" channel="1" tbeg="287.71" dur="0.83" score="0.84813" decision="YES"/>
+<kw file="BABEL_OP2_202_60650_20131126_234235_outLine" channel="1" tbeg="358.68" dur="0.5" score="0.581343" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_outLine" channel="1" tbeg="320.29" dur="1.02" score="0.476585" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00416" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_55902_20140121_230205_inLine" channel="1" tbeg="511.6" dur="0.48" score="0.999945" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00102" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_60650_20131126_234235_inLine" channel="1" tbeg="14.19" dur="0.44" score="0.987027" decision="YES"/>
+<kw file="BABEL_OP2_202_60650_20131126_234235_inLine" channel="1" tbeg="16.91" dur="0.46" score="0.880933" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00101" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_25085_20140219_185114_outLine" channel="1" tbeg="127.56" dur="0.24" score="0.332411" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_inLine" channel="1" tbeg="226.67" dur="0.35" score="0.9919" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_inLine" channel="1" tbeg="236.05" dur="0.4" score="0.995803" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="76.19" dur="0.37" score="0.788172" decision="YES"/>
+<kw file="BABEL_OP2_202_60650_20131126_234235_outLine" channel="1" tbeg="334.42" dur="0.88" score="0.983492" decision="YES"/>
+<kw file="BABEL_OP2_202_61440_20140128_015556_inLine" channel="1" tbeg="279.72" dur="1.03" score="0.980843" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="21.24" dur="0.51" score="0.677307" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_outLine" channel="1" tbeg="328.32" dur="0.37" score="0.999191" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_inLine" channel="1" tbeg="76.65" dur="0.36" score="0.564802" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_inLine" channel="1" tbeg="324.97" dur="0.32" score="0.953662" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_inLine" channel="1" tbeg="330.89" dur="0.34" score="0.759551" decision="YES"/>
+<kw file="BABEL_OP2_202_63604_20121231_193706_inLine" channel="1" tbeg="563.8" dur="0.72" score="0.971078" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="18.45" dur="0.3" score="0.84279" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="425.55" dur="0.32" score="0.33422" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_outLine" channel="1" tbeg="139.03" dur="0.32" score="0.407795" decision="YES"/>
+<kw file="BABEL_OP2_202_77990_20131007_063102_outLine" channel="1" tbeg="527.44" dur="0.38" score="0.992408" decision="YES"/>
+<kw file="BABEL_OP2_202_84177_20131208_021104_outLine" channel="1" tbeg="464.16" dur="1.25" score="0.410816" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00346" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_10524_20131009_200043_outLine" channel="1" tbeg="340.81" dur="0.37" score="0.792209" decision="YES"/>
+<kw file="BABEL_OP2_202_10524_20131009_200043_outLine" channel="1" tbeg="364.69" dur="0.31" score="0.995271" decision="YES"/>
+<kw file="BABEL_OP2_202_14814_20140205_210842_inLine" channel="1" tbeg="59.28" dur="0.61" score="0.961102" decision="YES"/>
+<kw file="BABEL_OP2_202_14814_20140205_210842_inLine" channel="1" tbeg="401.08" dur="1.66" score="0.99828" decision="YES"/>
+<kw file="BABEL_OP2_202_14814_20140205_210842_inLine" channel="1" tbeg="408.44" dur="0.29" score="0.522509" decision="YES"/>
+<kw file="BABEL_OP2_202_14814_20140205_210842_inLine" channel="1" tbeg="437.64" dur="0.33" score="0.884335" decision="YES"/>
+<kw file="BABEL_OP2_202_17115_20140218_210921_inLine" channel="1" tbeg="226.73" dur="0.55" score="0.80367" decision="YES"/>
+<kw file="BABEL_OP2_202_17115_20140218_210921_outLine" channel="1" tbeg="255.29" dur="0.58" score="0.719823" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="152.83" dur="0.36" score="0.998074" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="304.08" dur="0.66" score="0.99971" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="307.46" dur="0.65" score="0.997086" decision="YES"/>
+<kw file="BABEL_OP2_202_38588_20130228_211322_inLine" channel="1" tbeg="393.47" dur="0.39" score="0.965546" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="192.37" dur="0.43" score="0.332406" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_inLine" channel="1" tbeg="26.12" dur="0.93" score="0.588763" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="31.43" dur="0.28" score="0.474342" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_outLine" channel="1" tbeg="183.78" dur="0.25" score="0.996294" decision="YES"/>
+<kw file="BABEL_OP2_202_44478_20131011_041636_outLine" channel="1" tbeg="328.81" dur="0.42" score="0.974306" decision="YES"/>
+<kw file="BABEL_OP2_202_44478_20131011_041636_outLine" channel="1" tbeg="551.06" dur="0.28" score="0.999045" decision="YES"/>
+<kw file="BABEL_OP2_202_45459_20131012_022245_outLine" channel="1" tbeg="119.3" dur="0.44" score="0.605446" decision="YES"/>
+<kw file="BABEL_OP2_202_46681_20130109_191412_outLine" channel="1" tbeg="258.73" dur="0.44" score="0.546951" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_inLine" channel="1" tbeg="232.07" dur="1.12" score="0.586359" decision="YES"/>
+<kw file="BABEL_OP2_202_54046_20140121_184347_inLine" channel="1" tbeg="343.96" dur="0.25" score="0.383302" decision="YES"/>
+<kw file="BABEL_OP2_202_59549_20131003_204655_inLine" channel="1" tbeg="175.86" dur="0.34" score="0.98823" decision="YES"/>
+<kw file="BABEL_OP2_202_59549_20131003_204655_inLine" channel="1" tbeg="176.98" dur="0.29" score="0.98835" decision="YES"/>
+<kw file="BABEL_OP2_202_61440_20140128_015556_outLine" channel="1" tbeg="49.43" dur="0.36" score="0.764156" decision="YES"/>
+<kw file="BABEL_OP2_202_63084_20130801_015957_outLine" channel="1" tbeg="16.03" dur="0.38" score="0.868746" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_inLine" channel="1" tbeg="556.32" dur="0.3" score="0.97878" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_inLine" channel="1" tbeg="288.58" dur="0.56" score="0.669572" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_inLine" channel="1" tbeg="484.06" dur="0.18" score="0.368006" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_outLine" channel="1" tbeg="379.73" dur="0.81" score="0.935602" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_outLine" channel="1" tbeg="388.45" dur="0.3" score="0.994529" decision="YES"/>
+<kw file="BABEL_OP2_202_69964_20131012_170534_inLine" channel="1" tbeg="181.37" dur="0.36" score="0.81486" decision="YES"/>
+<kw file="BABEL_OP2_202_69964_20131012_170534_inLine" channel="1" tbeg="290.21" dur="0.42" score="0.893019" decision="YES"/>
+<kw file="BABEL_OP2_202_69964_20131012_170534_inLine" channel="1" tbeg="414.13" dur="0.32" score="0.320024" decision="YES"/>
+<kw file="BABEL_OP2_202_69964_20131012_170534_inLine" channel="1" tbeg="519.69" dur="0.45" score="0.999954" decision="YES"/>
+<kw file="BABEL_OP2_202_73258_20130215_190454_outLine" channel="1" tbeg="114.93" dur="0.28" score="0.414605" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_193227_outLine" channel="1" tbeg="310.8" dur="0.8" score="0.92137" decision="YES"/>
+<kw file="BABEL_OP2_202_88260_20130227_194941_inLine" channel="1" tbeg="564.91" dur="0.41" score="0.210608" decision="YES"/>
+<kw file="BABEL_OP2_202_88661_20130801_192922_outLine" channel="1" tbeg="300.83" dur="0.4" score="0.807561" decision="YES"/>
+<kw file="BABEL_OP2_202_90080_20140319_222809_inLine" channel="1" tbeg="525.15" dur="0.34" score="0.285154" decision="YES"/>
+<kw file="BABEL_OP2_202_98311_20130109_195922_inLine" channel="1" tbeg="95.5" dur="0.4" score="0.878695" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00211" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_34197_20121228_201800_inLine" channel="1" tbeg="411.68" dur="0.88" score="0.809559173484" decision="YES"/>
+<kw file="BABEL_OP2_202_47405_20131215_233528_outLine" channel="1" tbeg="585.68" dur="0.78" score="0.359445227592" decision="YES"/>
+<kw file="BABEL_OP2_202_63336_20140129_004138_outLine" channel="1" tbeg="26.7" dur="0.8" score="0.93946334768" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00368" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_14814_20140205_210842_inLine" channel="1" tbeg="141.75" dur="0.58" score="0.989122" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_inLine" channel="1" tbeg="14.24" dur="0.51" score="0.611167" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="41.22" dur="0.45" score="0.656582" decision="YES"/>
+<kw file="BABEL_OP2_202_15420_20140210_010333_outLine" channel="1" tbeg="539.87" dur="0.47" score="0.875389" decision="YES"/>
+<kw file="BABEL_OP2_202_27478_20140209_224101_inLine" channel="1" tbeg="185.84" dur="0.37" score="0.995779" decision="YES"/>
+<kw file="BABEL_OP2_202_32287_20131207_203757_inLine" channel="1" tbeg="148.27" dur="0.56" score="0.300757" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="386.94" dur="0.44" score="0.926808" decision="YES"/>
+<kw file="BABEL_OP2_202_44309_20140220_184116_inLine" channel="1" tbeg="53.88" dur="0.56" score="0.678979" decision="YES"/>
+<kw file="BABEL_OP2_202_44478_20131011_041636_inLine" channel="1" tbeg="51.88" dur="0.6" score="0.767331" decision="YES"/>
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="580.45" dur="0.43" score="0.806096" decision="YES"/>
+<kw file="BABEL_OP2_202_55106_20131215_030617_inLine" channel="1" tbeg="182.03" dur="0.51" score="0.764471" decision="YES"/>
+<kw file="BABEL_OP2_202_55106_20131215_030617_outLine" channel="1" tbeg="509.07" dur="0.69" score="0.870822" decision="YES"/>
+<kw file="BABEL_OP2_202_63484_20140128_234153_inLine" channel="1" tbeg="412.08" dur="0.57" score="0.462711" decision="YES"/>
+<kw file="BABEL_OP2_202_66177_20140201_213827_inLine" channel="1" tbeg="523.64" dur="0.85" score="0.707855" decision="YES"/>
+<kw file="BABEL_OP2_202_68384_20131031_003533_inLine" channel="1" tbeg="161.53" dur="0.42" score="0.994505" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00217" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_53957_20131031_012125_inLine" channel="1" tbeg="77.96" dur="1.78" score="0.64817" decision="YES"/>
+<kw file="BABEL_OP2_202_82637_20121227_193227_outLine" channel="1" tbeg="344.03" dur="0.68" score="0.373658" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00439" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_92740_20130923_235638_inLine" channel="1" tbeg="488.75" dur="0.87" score="0.739528" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00188" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_66822_20130219_225918_inLine" channel="1" tbeg="412.18" dur="1.21" score="0.987767722928" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00088" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_27478_20140209_224101_outLine" channel="1" tbeg="474.87" dur="0.83" score="0.986373767728" decision="YES"/>
+</detected_kwlist>
+<detected_kwlist kwid="KW202-00180" oov_count="0" search_time="0.0">
+<kw file="BABEL_OP2_202_38588_20130228_211322_outLine" channel="1" tbeg="345.93" dur="0.36" score="0.996835" decision="YES"/>
+<kw file="BABEL_OP2_202_39893_20140115_023429_outLine" channel="1" tbeg="424.3" dur="0.52" score="0.773759" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="257.66" dur="0.33" score="0.942109" decision="YES"/>
+<kw file="BABEL_OP2_202_52265_20140123_235252_outLine" channel="1" tbeg="267.49" dur="0.31" score="0.601612" decision="YES"/>
+</detected_kwlist>
+</kwslist>

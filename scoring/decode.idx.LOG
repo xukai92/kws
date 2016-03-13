@@ -1,0 +1,31 @@
+[/usr/local/teach/scoring/F4DE-3.2.4/bin/BABEL13_Scorer]
+FYI: /usr/local/teach/scoring/F4DE-3.2.4/bin/BABEL13_Scorer will run: [/usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/BABEL_Scorer.pl --Specfile /usr/local/teach/scoring/F4DE-3.2.4/KWSEval/BABEL/Participants/../../data/KWS13-SubmissionChecker_conf.perl -sys scoring/decode.idx.kwslist.xml -dbDir /usr/local/teach/MLSALT5/Practical/IndusDB -comp scoring/decode.idx-tmp -res scoring/decode.idx -exp KWS13_CUED_IARPA-babel202b-v1.0d_conv-dev_BaDev_KWS_FullLP_BaseLR_NTAR_p-test_1]
+
+Step 1: Parse input
+Info: EXPID = KWS13_CUED_IARPA-babel202b-v1.0d_conv-dev_BaDev_KWS_FullLP_BaseLR_NTAR_p-test_1
+Info: Tag = KWS13
+Info: Team = CUED
+Info: Corpus = IARPA-babel202b-v1.0d
+Info: Partition = conv-dev
+Info: ScoringCase = BaDev
+Info: Task = KWS
+Info: TrainingCond = 
+Info: SystemID = p-test
+Info: Version = 1
+Info: Language ID = IARPA-babel202
+Info: Language = 202
+Info: SCTKBin = 
+Info: SHA256 = 
+Info: evalYearSpecificKWSOptions = 
+Info: SystemMetadata = 
+Info: dbDir = /usr/local/teach/MLSALT5/Practical/IndusDB/IARPA-babel202b-v1.0d_conv-dev
+Info: indusCorporaDefsFile = /usr/local/teach/MLSALT5/Practical/IndusDB/IndusCorporaDefs.pl version 'IndusCorporaDefs V14 20150424'
+Info: indusCorporaDefsFile for IARPA-babel202: KWSProtocol => Occur
+Info: indusCorporaDefsFile for IARPA-babel202: TokTimes => MITLLFA3
+Info: indusCorporaDefsFile for IARPA-babel202: TokSeg => AppenWordSeg
+Info: indusCorporaDefsFile for IARPA-babel202: Set => Full|EvalPart1
+Info: indusCorporaDefsFile for IARPA-babel202: STTOptions{encoding} => -e utf-8
+Beginning KWS scoring
+[ERROR] Problem with KWSList's KWList entry: Problem checking KWSList file header (scoring/decode.idx.kwslist.xml): Problem with validation: scoring/decode.idx.kwslist.xml:1: parser error : Start tag expected, '<' not found
+LABEL mjini
+^

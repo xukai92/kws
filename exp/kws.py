@@ -1,7 +1,7 @@
 '''
 Python script to do keyword spotting.
 Usage:
-    python kws.py ctm_file query_file output_decode_file
+    python kws.py index_file query_file output_decode_file
 '''
 
 
@@ -10,111 +10,105 @@ import sys
 
 # handle command line exception
 if len(sys.argv) < 4:
-    print "---\nUsage:\n    python kws.py ctm_file query_file output_decode_file\n---\n"
+    print '---\nUsage:\n    python kws.py index_file query_file output_decode_file\n---\n'
     exit(1)
 
-# read ctm file into an index dictionary
-# where the first level key is the filename
-# and the second level key is the start time
-print "reading ctm file ..."
-f = open(sys.argv[1], "r")  # ctm filename is the first argument
+# read index file into two dictionaries
+# one for finding words
+# one for detecting phrases
+print 'reading index file ...'
+f = open(sys.argv[1], "r")  # ctm filename is the head argument
 lattices = {}
+indices = {}
 for line in f:
-    temp_dict = {}
-    line = " ".join(line.split())                   # remove the tabs
-    line_list = line.replace("\n", "").split(" ")   # remove the line break symbol and convert to list
-    file_name = line_list[0]
-    temp_dict["channel"] = line_list[1]
-    start_time = float(line_list[2])
-    temp_dict["duration"] = float(line_list[3])
-    temp_dict["token"] = line_list[4].lower()       # always input as lowercase
-    temp_dict["word-posterior"] = float(line_list[5])
-    if file_name not in lattices.keys():
-        lattices[file_name] = {}
-    lattices[file_name][start_time] = temp_dict
+    line = line.replace('\n', '')
+    line = line.split(' ')
+
+    # indices
+    if line[0] == 'LABEL':
+        label = line[1]
+        indices[label] = []
+    elif line[0] == 'INFO':
+        filen, ch, start, dur, pos, forw, backw = line[1:]
+        start = float(start)
+        dur = float(dur)
+        pos = float(pos)
+        indices[label].append({'filen': filen,
+                               'ch': ch,
+                               'start': start,
+                               'dur': dur,
+                               'pos': pos,
+                               'forw': forw,
+                               'backw': backw})
+
+        # lattices
+        if filen not in lattices.keys():
+            lattices[filen] = []
+        lattices[filen].append({'start': start,
+                                'ch': ch,
+                                'dur': dur,
+                                'label': label,
+                                'pos': pos})
+
 f.close()
 
 # read the query file into a dictionary
-print "reading xml file ..."
+print 'reading xml file ...'
 import xmltodict as xtd
 with open(sys.argv[2]) as fd:   # query filename is the second argument
     queries = xtd.parse(fd.read())
 
 # kws
-print "keyword spotting ..."
+print 'keyword spotting ...'
 detected_kwlist = {}                            # to store detected kw
-for query in queries["kwlist"]["kw"]:           # iterate over each query
+for query in queries['kwlist']['kw']:           # iterate over each query
+    kwid = query['@kwid']
     word_list = (query['kwtext']).split(" ")    # get the word(s) in each query
-    for file_name in lattices.keys():          # iterate over each file
-        p_i = 0         # previous i
-        # get the start time list in ascending order
-        start_time_list = lattices[file_name].keys()
-        start_time_list = sorted(start_time_list)
-        while (p_i < len(start_time_list)):
-            i = p_i + 1 # pointer for the file word list
-            j = 0       # pointer for the query word list
-
-            # find the first word
-            found_start = False
-            while (i < len(start_time_list)):
-                entry = lattices[file_name][start_time_list[i]]
-                if entry["token"] == word_list[j]:
-                    found_start = True
-                    break
-                i += 1
-            # i stores the index of the first word found now
-            p_i = i     # backup it for next loop
-
-            # check if the whole query is found
-            if found_start:
-                # compare the remaining part word-by-word
-                while (j < len(word_list) and i < len(start_time_list)):
-                    entry = lattices[file_name][start_time_list[i]]
-                    if entry["token"] != word_list[j]:  # if not same
-                        break                           # break
-                    i += 1
-                    j += 1
-                found_query = False
-                # if all the remaining part are the same
-                # , j should be equal to the query length
-                if j == len(word_list):
-                    found_query = True
-
-                # check 0.5s gap requirement
-                if j > 1:   # only check when the query has multiple words
-                    for k in range(j - 1):
-                        if lattices[file_name][start_time_list[i - j + k]]["duration"] + \
-                           start_time_list[i - j + k] < start_time_list[i - j + k + 1] - 0.5:
-                            found_query = False
-                            break
-
-                if found_query:
-                    # fetch record values
-                    kwid = query["@kwid"]
-                    start_time = start_time_list[i - j]
-                    duration = lattices[file_name][start_time_list[i - 1]]["duration"] + \
-                               start_time_list[i - 1] - start_time_list[i - j]
-                    # compute score
-
-                    posterior = 1
-                    for k in range(j):
-                        posterior *= lattices[file_name] \
-                                             [start_time_list[i - j + k] \
-                                             ["word-posterior"]]
-                    score = posterior
-
-                    # store it in a dictionary
-                    detected = {"kwfile": file_name,
-                                "channel": "1",
-                                "tbeg": start_time,
-                                "dur": duration,
-                                "score": score,
-                                "decision": "YES"}
-                    # add it to the whole detected dictionary
-                    if kwid not in detected_kwlist.keys():
-                        detected_kwlist[kwid] = [detected]
-                    else:
-                        detected_kwlist[kwid].append(detected)
+    head = word_list[0]
+    if head in indices.keys():
+        query_length = len(word_list)
+        if query_length == 1:     # single word
+            for info in indices[head]:
+                detected = {'kwfile': info['filen'],
+                            'channel': '1',
+                            'tbeg': info['start'],
+                            'dur': info['dur'],
+                            'score': info['pos'],
+                            'decision': 'YES'}
+                if kwid not in detected_kwlist.keys():
+                    detected_kwlist[kwid] = []
+                detected_kwlist[kwid].append(detected)
+        else:                       # phrase
+            for info in indices[head]:
+                lattice = lattices[info['filen']]                       # the corresponding 1-best list
+                lattice = sorted(lattice, key=lambda x: x['start'])     # sort with start time
+                start_list = [entry['start'] for entry in lattice]      # ordered start time list
+                label_list = [entry['label'] for entry in lattice]      # ordered label list
+                head_index = start_list.index(info['start'])
+                if head_index + query_length <= len(start_list):
+                    if word_list == label_list[head_index:head_index + query_length]:
+                        detected = {'kwfile': info['filen'],
+                                    'channel': '1',
+                                    'tbeg': info['start'],
+                                    'dur': info['dur'],
+                                    'score': info['pos'],
+                                    'decision': 'YES'}
+                        # check the 0.5s requirement
+                        connected = True
+                        for bias in range(query_length - 1):
+                            if lattice[head_index + bias]['start'] + \
+                                    lattice[head_index + bias]['dur'] + \
+                                    0.5 >= lattice[head_index + bias + 1]['start']:
+                                # if connected, update information
+                                detected['score'] *= lattice[head_index + bias + 1]['pos']
+                                detected['dur'] += lattice[head_index + bias + 1]['dur']
+                            else:   # break if not meet 0.5s requirement
+                                connected = False
+                                break
+                        if connected:   # output if connected
+                            if kwid not in detected_kwlist.keys():
+                                detected_kwlist[kwid] = []
+                            detected_kwlist[kwid].append(detected)
 
 # format output
 output = ""

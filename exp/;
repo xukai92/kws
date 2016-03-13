@@ -1,0 +1,99 @@
+'''
+Python script to do keyword spotting.
+Usage:
+    python kws.py index_file query_file output_decode_file
+'''
+
+
+import sys
+
+
+# handle command line exception
+if len(sys.argv) < 4:
+    print '---\nUsage:\n    python kws.py index_file query_file output_decode_file\n---\n'
+    exit(1)
+
+# read index file into a dictionary
+print 'reading index file ...'
+indices = {}
+f = open(sys.argv[1], 'r')
+for line in f:
+    line = line.replace('\n', '')
+    line = line.split(" ")
+    if line[0] == 'LABEL':
+        label = line[1]
+        indices[label] = {}
+    elif line[0] == 'INFO':
+        filen, ch, start, dur, pos, forw, backw = line[1:]
+        indices[label] = {'filen': filen,
+                          'ch': ch,
+                          'start': start,
+                          'dur': dur,
+                          'pos': pos,
+                          'forw': forw,
+                          'backw': backw}
+f.close()
+
+# read the query file into a dictionary
+import xmltodict as xtd
+print 'reading xml file ...'
+queries = {}
+with open(sys.argv[2]) as fd:
+    queries = xtd.parse(fd.read())
+
+
+# kws
+print 'keyword spotting ...'
+detected_kwlist = {}                            # to store detected kw
+for query in queries['kwlist']['kw']:           # iterate over each query
+    kwid = query['@kwid']
+    word_list = (query['kwtext']).split(" ")    # get the word(s) in each query
+
+    # decode grid
+    decode_grid = []
+    for word in word_list:
+        if word in indices.keys():
+            decode_grid.append([indices[word]])
+
+    # forward
+    for i in range(len(decode_grid) - 1):
+
+
+    # backward
+
+    print decode_grid, len(decode_list)
+
+    exit(1)
+    # add it to the detected list
+    if kwid not in detected_kwlist.keys():
+        detected_kwlist[kwid] = []
+    else:
+        detected_kwlist[kwid].append()
+
+# format output
+output = ""
+output += '<kwslist kwlist_filename="IARPA-babel202b-v1.0d_conv-dev.kwlist.xml" language="swahili" system_id="">\n'
+for kwid in detected_kwlist.keys():
+    output += '<detected_kwlist kwid="{kwid}" oov_count="0" search_time="0.0">\n'.format(kwid=kwid)
+    for kw in detected_kwlist[kwid]:
+        output += '<kw file="{kwfile}" ' \
+                  'channel="{channel}" ' \
+                  'tbeg="{tbeg}" ' \
+                  'dur="{dur}" ' \
+                  'score="{score}" ' \
+                  'decision="YES"/>\n'.format(kwfile=kw["kwfile"],
+                                              channel=kw["channel"],
+                                              tbeg=kw["tbeg"],
+                                              dur=kw["dur"],
+                                              score=kw["score"])
+    output += '</detected_kwlist>\n'
+output += "</kwslist>\n"
+
+# output
+print "output file ..."
+OUT_PATH = sys.argv[3]  # output filename is the third filename
+f = open(OUT_PATH, "w")
+f.write(output)
+f.close()
+
+print "... finished"
