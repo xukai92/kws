@@ -23,7 +23,7 @@ with open(sys.argv[2]) as fd:   # kws file 2 is the second argument
 
 # analysing
 decode = {}     # dictionary to store the combined system
-print 'analysing kws file 1 ...'
+print 'structring kws file 1 ...'
 for detected_kwlist in decode_1['kwslist']['detected_kwlist']:
     kwid = detected_kwlist['@kwid']
     decode[kwid] = {}
@@ -36,7 +36,7 @@ for detected_kwlist in decode_1['kwslist']['detected_kwlist']:
                 decode[kwid][filen] = {}
             decode[kwid][filen][tbeg] = kw
 
-print 'analysing kws file 2 ...'
+print 'combining ...'
 for detected_kwlist in decode_2['kwslist']['detected_kwlist']:
     kwid = detected_kwlist['@kwid']
     if kwid not in decode.keys():
@@ -45,15 +45,26 @@ for detected_kwlist in decode_2['kwslist']['detected_kwlist']:
         if type(detected_kwlist['kw']) != type([]):
             detected_kwlist['kw'] = [detected_kwlist['kw']]
         for kw in detected_kwlist['kw']:
-            filen, tbeg = kw['@file'], kw['@tbeg']
+            filen, tbeg, dur = kw['@file'], float(kw['@tbeg']), float(kw['@dur'])
             if filen not in decode[kwid]:
                 decode[kwid][filen] = {}
                 decode[kwid][filen][tbeg] = kw
             else:
-                if tbeg in decode[kwid][filen]:
-                    decode[kwid][filen][tbeg]['@score'] = max(float(kw['@score']), \
-                                                          float(decode[kwid][filen][tbeg]['@score']))
-                else:
+                # merge if time-stamp overlaps
+                A, B = tbeg, tbeg + dur
+                merged = False
+                for tbeg_ref in decode[kwid][filen]:
+                    tbeg_ref = float(tbeg_ref)
+                    dur_ref = float(decode[kwid][filen][tbeg_ref]['@dur'])
+                    C, D = tbeg_ref, tbeg_ref + dur_ref
+                    if A < D and C < B:     # overlaping
+                        decode[kwid][filen][tbeg_ref]['@score'] = (float(kw['@score'])) * dur / (dur + dur_ref) + \
+                                                                  (float(decode[kwid][filen][tbeg_ref]['@score'])) * dur_ref / (dur + dur_ref)
+                        decode[kwid][filen][tbeg_ref]['@tbeg'] = min(A, C)
+                        decode[kwid][filen][tbeg_ref]['@dur'] = max(B, D) - min(A, C)
+                        merged = True
+                        break
+                if not merged:
                     decode[kwid][filen][tbeg] = kw
 
 # output

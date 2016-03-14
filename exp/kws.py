@@ -106,6 +106,9 @@ for query in queries['kwlist']['kw']:           # iterate over each query
                                 connected = False
                                 break
                         if connected:   # output if connected
+                            detected['dur'] = lattice[head_index + bias + 1]['start'] - \
+                                              lattice[head_index]['start'] + \
+                                              lattice[head_index + bias + 1]['dur']
                             if kwid not in detected_kwlist.keys():
                                 detected_kwlist[kwid] = []
                             detected_kwlist[kwid].append(detected)
