@@ -59,7 +59,7 @@ for detected_kwlist in decode_2['kwslist']['detected_kwlist']:
                 for tbeg_ref in decode[kwid][filen]:
                     dur_ref = float(decode[kwid][filen][tbeg_ref]['@dur'])
                     C, D = float(tbeg_ref), float(tbeg_ref) + dur_ref
-                    if A < D and C < B:     # overlaping
+                    if A < D and C < B:     # check overlapping
                         score1, score2 = float(kw['@score']), float(decode[kwid][filen][tbeg_ref]['@score'])
                         if method == 'average':
                             score3 = (score1 + score2) / 2
