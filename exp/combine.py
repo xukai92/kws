@@ -1,7 +1,9 @@
 '''
 Python script to do system combination
 Usage:
-    python combine.py kws_file_1 kws_file_2 combined_kws_file
+    python combine.py kws_file_1 kws_file_2 method combined_kws_file
+
+    method: average, max, weighted
 '''
 
 
@@ -9,8 +11,8 @@ import sys
 
 
 # handle command line exception
-if len(sys.argv) < 4:
-    print '---\nUsage:\n    python combine.py kws_file_1 kws_file_2 combined_kws_file\n---\n'
+if len(sys.argv) < 5:
+    print '---\nUsage:\n    python combine.py kws_file_1 kws_file_2 method combined_kws_file\n\n    method: average, max, weighted\n---\n'
     exit(1)
 
 # read kws files
@@ -23,6 +25,7 @@ with open(sys.argv[2]) as fd:   # kws file 2 is the second argument
 
 # analysing
 decode = {}     # dictionary to store the combined system
+method = sys.argv[3]
 print 'structring kws file 1 ...'
 for detected_kwlist in decode_1['kwslist']['detected_kwlist']:
     kwid = detected_kwlist['@kwid']
@@ -54,12 +57,17 @@ for detected_kwlist in decode_2['kwslist']['detected_kwlist']:
                 A, B = tbeg, tbeg + dur
                 merged = False
                 for tbeg_ref in decode[kwid][filen]:
-                    tbeg_ref = float(tbeg_ref)
                     dur_ref = float(decode[kwid][filen][tbeg_ref]['@dur'])
-                    C, D = tbeg_ref, tbeg_ref + dur_ref
+                    C, D = float(tbeg_ref), float(tbeg_ref) + dur_ref
                     if A < D and C < B:     # overlaping
-                        decode[kwid][filen][tbeg_ref]['@score'] = (float(kw['@score'])) * dur / (dur + dur_ref) + \
-                                                                  (float(decode[kwid][filen][tbeg_ref]['@score'])) * dur_ref / (dur + dur_ref)
+                        score1, score2 = float(kw['@score']), float(decode[kwid][filen][tbeg_ref]['@score'])
+                        if method == 'average':
+                            score3 = (score1 + score2) / 2
+                        elif method == 'max':
+                            score3 = max(score1, score2)
+                        elif method == 'weighted':
+                            score3 = (score1 * dur + score2 * dur_ref) / (dur + dur_ref)
+                        decode[kwid][filen][tbeg_ref]['@score'] = score3
                         decode[kwid][filen][tbeg_ref]['@tbeg'] = min(A, C)
                         decode[kwid][filen][tbeg_ref]['@dur'] = max(B, D) - min(A, C)
                         merged = True
@@ -89,7 +97,7 @@ for kwid in decode.keys():
 output += "</kwslist>\n"
 
 print 'output file ...'
-OUT_PATH = sys.argv[3]
+OUT_PATH = sys.argv[4]
 f = open(OUT_PATH, 'w')
 f.write(output)
 f.close()
