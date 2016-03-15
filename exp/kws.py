@@ -30,9 +30,7 @@ for line in f:
         indices[label] = []
     elif line[0] == 'INFO':
         filen, ch, start, dur, pos, forw, backw = line[1:]
-        start = float(start)
-        dur = float(dur)
-        pos = float(pos)
+        start, dur, pos, forw, backw = float(start), float(dur), float(pos), float(forw), float(backw)
         indices[label].append({'filen': filen,
                                'ch': ch,
                                'start': start,
@@ -48,7 +46,9 @@ for line in f:
                                 'ch': ch,
                                 'dur': dur,
                                 'label': label,
-                                'pos': pos})
+                                'pos': pos,
+                                'forw': forw,
+                                'backw': backw})
 
 f.close()
 
@@ -73,7 +73,7 @@ for query in queries['kwlist']['kw']:           # iterate over each query
                             'channel': '1',
                             'tbeg': info['start'],
                             'dur': info['dur'],
-                            'score': info['pos'],
+                            'score': info['forw'] * info['pos'] * info['backw'],
                             'decision': 'YES'}
                 if kwid not in detected_kwlist.keys():
                     detected_kwlist[kwid] = []
@@ -91,7 +91,7 @@ for query in queries['kwlist']['kw']:           # iterate over each query
                                     'channel': '1',
                                     'tbeg': info['start'],
                                     'dur': info['dur'],
-                                    'score': info['pos'],
+                                    'score': info['forw'] * info['pos'],
                                     'decision': 'YES'}
                         # check the 0.5s requirement
                         connected = True
@@ -107,8 +107,8 @@ for query in queries['kwlist']['kw']:           # iterate over each query
                                 break
                         if connected:   # output if connected
                             detected['dur'] = lattice[head_index + bias + 1]['start'] - \
-                                              lattice[head_index]['start'] + \
-                                              lattice[head_index + bias + 1]['dur']
+                                              lattice[head_index]['start'] + lattice[head_index + bias + 1]['dur']
+                            detected['score'] *= lattice[head_index + bias + 1]['backw']
                             if kwid not in detected_kwlist.keys():
                                 detected_kwlist[kwid] = []
                             detected_kwlist[kwid].append(detected)
